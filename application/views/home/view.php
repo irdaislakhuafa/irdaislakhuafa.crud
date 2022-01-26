@@ -6,7 +6,6 @@
             <tr>
                 <th>NO</th>
                 <th>NAMA</th>
-                <th>EMAIL</th>
                 <th>JK</th>
                 <th>EMAIL</th>
                 <th>TELEPON</th>

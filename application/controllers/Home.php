@@ -20,4 +20,16 @@ class Home extends CI_Controller
         $this->template->content->view("home/index", $data);
         $this->template->publish();
     }
+
+    public function lihat()
+    {
+        $data["list_mahasiswa"] = $this->MahasiswaModel->getAll();
+        $this->template->content->view("home/view", $data);
+        $this->template->publish();
+    }
+    public function tambah()
+    {
+        $this->template->content->view("home/add");
+        $this->template->publish();
+    }
 }
