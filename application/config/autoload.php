@@ -62,7 +62,8 @@ $autoload['libraries'] = array(
     'Components',
     'template',
     'database',
-    'session'
+    'session',
+    'form_validation'
 );
 
 /*
@@ -95,7 +96,8 @@ $autoload['drivers'] = array();
 |	$autoload['helper'] = array('url', 'file');
 */
 $autoload['helper'] = array(
-    'url'
+    'url',
+    'security'
 );
 
 /*
@@ -140,5 +142,6 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array(
-    'MahasiswaModel'
+    'MahasiswaModel',
+    'AuthModel'
 );

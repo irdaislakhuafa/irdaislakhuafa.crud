@@ -21,4 +21,8 @@ class MahasiswaModel extends CI_Model
     {
         return $this->db->where("id", $id)->from("mahasiswa")->get()->row_array();
     }
+    public function findByNpm($npm)
+    {
+        return $this->db->where("npm", $npm)->get("mahasiswa")->result();
+    }
 }

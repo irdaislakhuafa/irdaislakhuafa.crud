@@ -5,7 +5,7 @@ $this->components->getHead();
     <div class="container">
 
         <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
-            <div class="container">
+            <div class="container  fadeInUp wow">
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
@@ -25,7 +25,9 @@ $this->components->getHead();
                                     <p class="text-center small">Masukan username dan password anda untuk login</p>
                                 </div>
 
-                                <form class="row g-3 needs-validation" novalidate>
+                                <!-- form start -->
+                                <span><?= validation_errors() ?></span>
+                                <form action="<?= base_url() . "auth/check_login" ?>" method="POST" class="row g-3 needs-validation">
 
                                     <div class="col-12">
                                         <label for="yourUsername" class="form-label">Username</label>
@@ -48,6 +50,7 @@ $this->components->getHead();
                                         <p class="small mb-0">Belum punya akun? <a href="<?= base_url() . "auth/create" ?>">Buat akun</a></p>
                                     </div>
                                 </form>
+                                <!-- form end -->
 
                             </div>
                         </div>

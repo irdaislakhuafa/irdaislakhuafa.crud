@@ -93,7 +93,7 @@ class Components
 
                                     <span>
                                         <?php
-                                        echo ($this->session->userdataa("username") ? "Keluar" : "Masuk")
+                                        // echo ($this->session->get_userdata("username") ? "Keluar" : "Masuk")
                                         ?>
                                     </span>
                                 </a>

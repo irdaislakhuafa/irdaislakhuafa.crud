@@ -13,7 +13,7 @@
             <!-- npm -->
             <div class="mb-3">
                 <label for="npm" class="form-label text-uppercase">npm</label>
-                <input value="<?= $mahasiswa["npm"] ?>" required type="text" name="npm" id="npm" class="form-control" placeholder="Ex. 1412190011">
+                <input disabled value="<?= $mahasiswa["npm"] ?>" required type="text" name="npm" id="npm" class="form-control" placeholder="Ex. 1412190011">
             </div>
             <!-- email -->
             <div class="mb-3">
