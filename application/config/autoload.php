@@ -61,7 +61,8 @@ $autoload['packages'] = array();
 $autoload['libraries'] = array(
     'Components',
     'template',
-    'database'
+    'database',
+    'session'
 );
 
 /*
