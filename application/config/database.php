@@ -95,12 +95,33 @@ $query_builder = TRUE;
 	'save_queries' => TRUE
 ); */
 
-$db['default'] = array(
+/* $db['default'] = array(
 	// 'dsn'	=> 'postgres://ffjcrqvqpjdoky:0fefecd06fc77c689eab04d9bdfd852dec007f513e7bd4db09506a298d2ed6d2@ec2-44-198-196-169.compute-1.amazonaws.com:5432/d5n6blp7n3gdok',
 	'hostname' => 'ec2-44-198-196-169.compute-1.amazonaws.com',
 	'username' => 'ffjcrqvqpjdoky',
 	'password' => '0fefecd06fc77c689eab04d9bdfd852dec007f513e7bd4db09506a298d2ed6d2',
 	'database' => 'd5n6blp7n3gdok',
+	'dbdriver' => 'postgre',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+); */
+$db['default'] = array(
+	'dsn'	=> getenv('DATABASE_URL'),
+	'hostname' => 'localhost',
+	'username' => '',
+	'password' => '',
+	'database' => '',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
