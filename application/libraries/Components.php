@@ -91,11 +91,12 @@ class Components
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <i class="bi bi-box-arrow-right"></i>
 
-                                    <span>
+                                    <a>
+                                        Keluar
                                         <?php
                                         // echo ($this->session->get_userdata("username") ? "Keluar" : "Masuk")
                                         ?>
-                                    </span>
+                                    </a>
                                 </a>
                             </li>
 

@@ -6,6 +6,10 @@ class Home extends CI_Controller
     {
         parent::__construct();
         $this->template->set_template("index");
+
+        if (!isset($_SESSION["username"])) {
+            redirect(base_url() . "auth/view_login");
+        }
     }
 
     public function index()

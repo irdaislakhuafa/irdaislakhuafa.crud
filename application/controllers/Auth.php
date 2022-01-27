@@ -66,10 +66,8 @@ class Auth extends CI_Controller
                 // );
                 $this->session->set_userdata(
                     [
-                        "user_role" =>
-                        $check_user->user_role,
-                        "username" =>
-                        $check_user->username
+                        "username" => $check_user->username,
+                        "user_role" => $check_user->user_role
                     ]
                 );
 
